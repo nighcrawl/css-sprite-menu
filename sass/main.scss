@@ -1,0 +1,42 @@
+.nav {
+	background-image: url(../img/nav_main.png);
+	height: 30px;
+	list-style-type: none;
+	margin: 0 auto 10px;
+	padding: 0;
+	position: relative;
+	width: 726px;
+
+	li {
+		float: left;
+	}
+
+	a {
+		display: block;
+		line-height: 30px;
+		overflow: hidden;
+		text-align: center;
+		text-indent: -9999em;
+		width: 97px;
+
+		&:focus, &:hover {
+			background-image: url(../img/nav_main.png);
+		}
+	}
+
+	a[href="#home"]:focus, a[href="#home"]:hover {
+		background-position: 0 -30px;
+	}
+
+	a[href="#services"]:focus, a[href="#services"]:hover {
+		background-position: -97px -30px;
+	}
+
+	a[href="#references"]:focus, a[href="#references"]:hover {
+		background-position: -194px -30px;
+	}
+
+	a[href="#contact"]:focus, a[href="#contact"]:hover {
+		background-position: -291px -30px;
+	}
+}
